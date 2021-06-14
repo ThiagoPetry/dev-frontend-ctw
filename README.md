@@ -1,3 +1,3 @@
-# DevFrontEndWEG
-Front-End do projeto da CTW 2021
+# Sobre o Projeto
+Neste repositório está somente o front-end do projeto.
 
