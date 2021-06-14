@@ -1,0 +1,294 @@
+canvas {
+    z-index: 1;
+}
+
+#containers-dashboard-circle {
+    display: flex;
+    justify-content: center;
+}
+
+/* Utilizada */
+
+#container-dashboard-utilizada {
+    width: 20vw;
+    height: 35vh;
+    margin-top: 14vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-dashboard-utilizada .container-info-top {
+    width: 20vw;
+    height: 8vh;
+    background-color: #00579D;
+    box-shadow: 0.1vh -0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0.5vh 0.5vh 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+}
+
+#container-dashboard-utilizada .container-info-top h1 {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-left: 4.2vw;
+}
+
+#container-dashboard-utilizada .container-info-top .img {
+    background-image: url('../img/lupa.svg');
+    background-position: center;
+    background-size: cover;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 0.5vh;
+    margin-right: 1.5vh;
+}
+
+#container-dashboard-utilizada .container-info-top .img:hover {
+    cursor: pointer;
+    filter: opacity(90%)
+}
+
+#container-dashboard-utilizada .container-info-bottom {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.chart1 {
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0 0 0.5vh 0.5vh;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+.chart2 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0 0 0.5vh 0.5vh;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+/* Liberada */
+
+#container-dashboard-liberada {
+    width: 20vw;
+    height: 35vh;
+    margin-top: 54vh;
+    margin-left: -20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-dashboard-liberada .container-info-top {
+    width: 20vw;
+    height: 8vh;
+    background-color: #00579D;
+    box-shadow: 0.1vh -0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0.5vh 0.5vh 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+}
+
+#container-dashboard-liberada .container-info-top h1 {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-left: 4.2vw;
+}
+
+#container-dashboard-liberada .container-info-top .img {
+    background-image: url('../img/lupa.svg');
+    background-position: center;
+    background-size: cover;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 0.5vh;
+    margin-right: 1.5vh;
+}
+
+#container-dashboard-liberada .container-info-top .img:hover {
+    cursor: pointer;
+    filter: opacity(90%)
+}
+
+#container-dashboard-liberada .container-info-bottom {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+/* Box money info */
+
+#container-money-info {
+    width: 60vw;
+    height: 25vh;
+    margin-top: 64vh;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+#container-money-info .money-box {
+    width: 15vw;
+    height: 25vh;
+    margin-left: 5vw;
+    background-color: white;
+    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0 0 0.5vh 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#container-money-info .money-box:first-child {
+    margin-left: 0vw;    
+}
+
+#container-money-info .money-box .money-box-title {
+    width: 15vw;
+    height: 5vh;
+    background-color: #00579D;
+    box-shadow: 0.1vh -0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0.5vh 0.5vh 0 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2.2vh;
+}
+
+#container-money-info .money-box .money-box-text {
+    width: 15vw;
+    height: 5vh;
+    margin-bottom: 1vh;
+    color: #00579D;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2.4vh;
+}
+
+#container-money-info .money-box .money-box-text:hover {
+    background-color: rgb(203, 203, 203, 0.2);
+}
+
+#container-money-info .money-box .money-box-text::after {
+    content: "";
+    width: 14vw;
+    height: 0.1vh;
+    margin-top: 5vh;
+    background-color: #CBCBCB;
+    display: flex;
+    position: absolute;
+}
+
+#container-money-info .money-box .money-box-text:last-child::after {
+    display: none;
+}
+
+/* Gráfico principal */
+
+#container-dashboard-geral {
+    width: 55vw;
+    height: 44vh;
+    margin-top: 14vh;
+    margin-left: 34.5vw;
+    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0 0 0.5vh 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+}
+
+#container-dashboard-geral .container-dashboard-geral-title {
+    width: 55vw;
+    height: 5.2vh;
+    background-color: #00579D;
+    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.40);
+    border-radius: 0.5vh 0.5vh 0 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2.4vh;
+}
+
+#container-dashboard-geral .dashboard-filtro {
+    width: 55vw;
+    height: 6.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-dashboard-geral .dashboard-filtro .filtro {
+    height: 6.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+#container-dashboard-geral .dashboard-filtro .filtro:first-child {
+    margin-left: 8vw;
+}
+
+#container-dashboard-geral .dashboard-filtro .filtro-title {
+    height: 6.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #575757;
+    font-size: 1.8vh;
+    text-shadow: 0.1vh 0.1vh 0.1vh rgb(0, 0, 0, 0.25);
+}
+
+#container-dashboard-geral .dashboard-filtro .filtro-box {
+    width: 8vw;
+    height: 3vh;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2vh solid #CCCCCC;
+}
+
+#container-dashboard-geral #dashboard-geral {
+    width: 55vw;
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

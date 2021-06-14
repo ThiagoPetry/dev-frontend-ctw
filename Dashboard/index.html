@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script>
+    <script src='js/graphic/echarts-liquidfill.js'></script>
+    <link href="css/style-menu-left.css" rel="stylesheet">
+    <link href="css/style-dashboard.css" rel="stylesheet">
+    <title>Dashboard | WEG</title>
+</head>
+<body>
+    <div id="container-navbar"></div>
+    <div id="container-menu">
+        <div id="container-info">
+            <div id="user-img">
+                <p id="user-name">Seja bem vindo, <a>Renato Silva</a></p> 
+            </div>
+            <div id="news-img">
+                <p id="title-not">Notificações</p> 
+                <div id="line-blue"></div>
+            </div>
+            <div id="refresh-img"></div>
+            <div id="delete-img"></div>
+            <div id="container-msg">
+                <div id="msg">
+                    <div id="line-msg"></div>
+                    <div id="aba">
+                        <div id="title-msg">
+                            <p>Cumprimento de jornada</p>
+                        </div>
+                        <div id="text-msg">
+                            <p>O funcionário José concluiu suas tarefas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="exit-img"></div>
+        </div>
+        <div id="btn-open"></div>
+    </div>
+    <script src="js/open-menu-left.js"></script>
+
+    <!-- ===================================================================================== -->
+
+    <div id="containers-dashboard-circle">
+        <div id="container-dashboard-utilizada">
+            <div class="container-info-top">
+                <h1>VERBA UTILIZADA</h1>
+                <div class="img"></div>
+            </div>
+            <div class="container-info-bottom">
+                <div class="chart1" _echarts_instance_="ec_1623262604144" style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                    <div style="position: relative; width: 190px; height: 200px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                        <canvas data-zr-dom-id="zr_0" width="190" height="200" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container-dashboard-liberada">
+            <div class="container-info-top">
+                <h1>VERBA LIBERADA</h1>
+                <div class="img"></div>
+            </div>
+            <div class="container-info-bottom">
+                <div class="chart2" _echarts_instance_="ec_1623262604144" style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                    <div style="position: relative; width: 190px; height: 200px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                        <canvas data-zr-dom-id="zr_0" width="190" height="200" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================================== -->
+
+    <div id="container-dashboard-geral">
+        <div class="container-dashboard-geral-title">UTILIZAÇÃO DA VERBA</div>
+        <div class="dashboard-filtro">
+            <div class="filtro">
+                <div class="filtro-title">Projeto:</div>
+                <div class="filtro-box"></div>
+            </div>
+            <div class="filtro">
+                <div class="filtro-title">Status:</div>
+                <div class="filtro-box"></div>
+            </div>
+            <div class="filtro">
+                <div class="filtro-title">Centro de Custo:</div>
+                <div class="filtro-box"></div>
+            </div>
+        </div>
+        <div id="dashboard-geral">
+        </div>
+    </div>
+
+    <!-- ===================================================================================== -->
+
+    <div id="container-money-info">
+        <div class="money-box">
+            <div class="money-box-title">VERBA DISPONÍVEL</div>
+            <div class="money-box-text">R$ 175.000,00</div>
+            <div class="money-box-text">$ 32.142,85</div>
+            <div class="money-box-text">€ 26.747,83</div>
+        </div>
+        <div class="money-box">
+            <div class="money-box-title">VERBA LIBERADA</div>
+            <div class="money-box-text">R$ 25.000,00</div>
+            <div class="money-box-text">$ 4.591,70</div>
+            <div class="money-box-text">€ 3.821,12</div>
+        </div>
+        <div class="money-box">
+            <div class="money-box-title">VERBA APROVADA</div>
+            <div class="money-box-text">R$ 200.000,00</div>
+            <div class="money-box-text">$ 36.733,64</div>
+            <div class="money-box-text">€ 30.568,95</div>
+        </div>
+    </div>
+
+    <!-- Script dos gráficos líquidos (precisa ser revisado) -->
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+            var s = document.getElementsByTagName('script')[0];
+        })();
+
+        var bgColor = '#D6F5FF';
+        var containers = document.getElementsByClassName('chart1');
+        var options = [{
+            series: [{
+                type: 'liquidFill',
+                data: [0.8, 0.6, 0.4, 0.2],
+                radius: '80%',
+                outline: {
+                    show: true
+                },
+                backgroundStyle: {
+                    borderColor: 'white',
+                    borderWidth: 12,
+                    color: bgColor,
+                    shadowColor: 'rgb(0, 87, 157)',
+                },             
+                label: {
+                    position: ['50%', '50%'],
+                    fontSize: 40,
+                    color: '#00579D',
+                    insideColor: 'white',
+                }
+            }]      
+        }];
+        var charts = [];
+        for (var i = 0; i < options.length; ++i) {
+            var chart = echarts.init(containers[i]);
+
+            if (i > 0) {
+                options[i].series[0].silent = true;
+            }
+
+            chart.setOption(options[i]);
+            chart.setOption({
+                baseOption: options[i],
+                media: [{
+                    query: {
+                        maxWidth: 300
+                    },
+                    option: {
+                        series: [{
+                            label: {
+                                fontSize: 26
+                            }
+                        }]
+                    }
+                }]
+            });
+            charts.push(chart);
+        }
+        window.onresize = function () {
+            for (var i = 0; i < charts.length; ++i) {
+                charts[i].resize();
+            }
+        };
+    </script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement('script');
+        hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+        var s = document.getElementsByTagName('script')[0];
+    })();
+
+    var bgColor = '#D6F5FF';
+    var containers = document.getElementsByClassName('chart2');
+    var options = [{
+        series: [{
+            type: 'liquidFill',
+            data: [0.8, 0.6, 0.4, 0.2],
+            radius: '80%',
+            outline: {
+                show: true
+            },
+            backgroundStyle: {
+                borderColor: 'white',
+                borderWidth: 12,
+                color: bgColor,
+                shadowColor: 'rgb(0, 87, 157)',
+            },             
+            label: {
+                position: ['50%', '50%'],
+                fontSize: 40,
+                color: '#00579D',
+                insideColor: 'white',
+            }
+        }]      
+    }];
+    var charts = [];
+    for (var i = 0; i < options.length; ++i) {
+        var chart = echarts.init(containers[i]);
+
+        if (i > 0) {
+            options[i].series[0].silent = true;
+        }
+
+        chart.setOption(options[i]);
+        chart.setOption({
+            baseOption: options[i],
+            media: [{
+                query: {
+                    maxWidth: 300
+                },
+                option: {
+                    series: [{
+                        label: {
+                            fontSize: 26
+                        }
+                    }]
+                }
+            }]
+        });
+        charts.push(chart);
+    }
+    window.onresize = function () {
+        for (var i = 0; i < charts.length; ++i) {
+            charts[i].resize();
+        }
+    };
+</script>
+
+</body>
+</html>
