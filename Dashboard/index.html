@@ -8,6 +8,7 @@
     <script src='js/graphic/echarts-liquidfill.js'></script>
     <link href="css/style-menu-left.css" rel="stylesheet">
     <link href="css/style-dashboard.css" rel="stylesheet">
+    <link href="css/style-menu-right.css" rel="stylesheet">
     <title>Dashboard | WEG</title>
 </head>
 <body>
@@ -118,6 +119,56 @@
         </div>
     </div>
 
+    <!-- ===================================================================================== -->
+
+    <div class="container-navbar"></div>
+        <div id="container-menu-right">
+            <div id="cont1" class="cont-icons">
+                <img id="img1" src="img/icon1.svg">
+                <div id="txt1" class="txtMR">
+                    <a>VISUALIZAR</a>
+                    <a>PROJETOS</a>
+                </div>
+            </div>
+            <div id="cont2" class="cont-icons">
+                <img id="img2" src="img/icon2.svg">
+                <div id="txt2" class="txtMR">
+                    <a>CADASTRAR</a>
+                    <a>PROJETOS</a>
+                </div>
+            </div>
+            <div id="cont3" class="cont-icons">
+                <img id="img3" src="img/icon3.svg">
+                <div id="txt3" class="txtMR">
+                    <a>EDITAR</a>
+                    <a>PROJETOS</a>
+                </div>
+            </div>
+            <div id="cont4" class="cont-icons">
+                <img id="img4" src="img/icon4.svg">
+                <div id="txt4" class="txtMR">
+                    <a>CADASTRAR</a>
+                    <a>CONSULTORES</a>
+                </div>
+            </div>
+            <div id="cont5"class="cont-icons">
+                <img id="img5" src="img/icon5.svg">
+                <div id="txt5" class="txtMR">
+                    <a>ALOCAR</a>
+                    <a>CONSULTORES</a>
+                </div>
+            </div>
+            <div id="cont6" class="cont-icons">
+                <img id="img6" src="img/icon6.svg">
+                <div id="txt6" class="txtMR">
+                    <a>IR PARA</a>
+                    <a>DASHBOARDS</a>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="js/open-menu-right.js"></script>
+    <script type="text/javascript" src="js/close-menu-right.js"></script>
+
     <!-- Script dos gráficos líquidos (precisa ser revisado) -->
 
     <script>
@@ -146,7 +197,7 @@
                 },             
                 label: {
                     position: ['50%', '50%'],
-                    fontSize: 40,
+                    fontSize: 50,
                     color: '#00579D',
                     insideColor: 'white',
                 }
@@ -184,71 +235,69 @@
             }
         };
     </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+            var s = document.getElementsByTagName('script')[0];
+        })();
 
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement('script');
-        hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
-        var s = document.getElementsByTagName('script')[0];
-    })();
-
-    var bgColor = '#D6F5FF';
-    var containers = document.getElementsByClassName('chart2');
-    var options = [{
-        series: [{
-            type: 'liquidFill',
-            data: [0.8, 0.6, 0.4, 0.2],
-            radius: '80%',
-            outline: {
-                show: true
-            },
-            backgroundStyle: {
-                borderColor: 'white',
-                borderWidth: 12,
-                color: bgColor,
-                shadowColor: 'rgb(0, 87, 157)',
-            },             
-            label: {
-                position: ['50%', '50%'],
-                fontSize: 40,
-                color: '#00579D',
-                insideColor: 'white',
-            }
-        }]      
-    }];
-    var charts = [];
-    for (var i = 0; i < options.length; ++i) {
-        var chart = echarts.init(containers[i]);
-
-        if (i > 0) {
-            options[i].series[0].silent = true;
-        }
-
-        chart.setOption(options[i]);
-        chart.setOption({
-            baseOption: options[i],
-            media: [{
-                query: {
-                    maxWidth: 300
+        var bgColor = '#D6F5FF';
+        var containers = document.getElementsByClassName('chart2');
+        var options = [{
+            series: [{
+                type: 'liquidFill',
+                data: [0.8, 0.6, 0.4, 0.2],
+                radius: '80%',
+                outline: {
+                    show: true
                 },
-                option: {
-                    series: [{
-                        label: {
-                            fontSize: 26
-                        }
-                    }]
+                backgroundStyle: {
+                    borderColor: 'white',
+                    borderWidth: 12,
+                    color: bgColor,
+                    shadowColor: 'rgb(0, 87, 157)',
+                },             
+                label: {
+                    position: ['50%', '50%'],
+                    fontSize: 70,
+                    color: '#00579D',
+                    insideColor: 'white',
                 }
-            }]
-        });
-        charts.push(chart);
-    }
-    window.onresize = function () {
-        for (var i = 0; i < charts.length; ++i) {
-            charts[i].resize();
-        }
-    };
-</script>
+            }]      
+        }];
+        var charts = [];
+        for (var i = 0; i < options.length; ++i) {
+            var chart = echarts.init(containers[i]);
 
+            if (i > 0) {
+                options[i].series[0].silent = true;
+            }
+
+            chart.setOption(options[i]);
+            chart.setOption({
+                baseOption: options[i],
+                media: [{
+                    query: {
+                        maxWidth: 300
+                    },
+                    option: {
+                        series: [{
+                            label: {
+                                fontSize: 26
+                            }
+                        }]
+                    }
+                }]
+            });
+            charts.push(chart);
+        }
+        window.onresize = function () {
+            for (var i = 0; i < charts.length; ++i) {
+                charts[i].resize();
+            }
+        };
+    </script>
 </body>
 </html>
