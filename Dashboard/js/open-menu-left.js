@@ -3,6 +3,7 @@ var status = 0;
 document.getElementById("btn-open").addEventListener("click", function() {
     if(status == 0) {
         document.getElementById("btn-open").style.transform = "rotate(225deg)";
+        document.getElementById("btn-open").style.marginLeft = "16.25vw";
 
         document.getElementById("container-menu").style.transform = 'translateX(11vw)';
         document.getElementById("user-img").style.transform = 'translateX(-11vw)';
@@ -11,7 +12,7 @@ document.getElementById("btn-open").addEventListener("click", function() {
 
         document.getElementById("news-img").style.transform = 'translate(-12vw, 2vh)';
         document.getElementById("news-img").style.width = '2.75vh';
-        document.getElementById("news-img").style.height = '2.5vh';
+        document.getElementById("news-img").style.height = '2.6vh';
 
         document.getElementById("exit-img").style.transform = 'scale(0.8, 0.675)';
 
