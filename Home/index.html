@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js'></script>
+    <script src='js/graphic/echarts-liquidfill.js'></script>
+    <link href="css/style-home.css" rel="stylesheet">
+    <link href="css/style-menu-right.css" rel="stylesheet">
+    <title>Main Menu | WEG</title>
+</head>
+<body>
+    <div id="container-navbar"></div>
+    <div id="container-menu">
+        <div id="container-info">
+            <div id="user-img">
+                <p id="user-name">Seja bem vindo, <a>Renato Silva</a></p> 
+            </div>
+            <div id="news-img">
+                <p id="title-not">Notificações</p> 
+                <div id="line-blue"></div>
+            </div>
+            <div id="refresh-img"></div>
+            <div id="delete-img"></div>
+            <div id="container-msg">
+                <div id="msg">
+                    <div id="line-msg"></div>
+                    <div id="aba">
+                        <div id="title-msg">
+                            <p>Cumprimento de jornada</p>
+                        </div>
+                        <div id="text-msg">
+                            <p>O funcionário José concluiu suas tarefas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="exit-img"></div>
+        </div>
+        <div id="btn-open"></div>
+    </div>
+    <script src="js/open-menu-left.js"></script>
+
+    <!-- ===================================================================================== -->
+
+    <div id="container-main-menu-infos">
+        <div id="container-preview-tittles">
+            <div class="preview-tittle">
+                <a>Visão</a><a>Geral</a>
+            </div>
+            <div id="container-squares">
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+                <div class="squares"></div>
+            </div>
+        </div>
+        <div id="grid-content-graphs">
+            <div id="content-container">
+                <div id="content-container-tittle">
+                    <a>Projetos Concluídos:</a>
+                </div>
+                <div id="content-container-middle-info">
+                    <div id="container-squares-middle-info">
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                    </div>
+                    <div id="container-done">
+                        <a>87</a>
+                    </div>
+                    <div id="container-dashboard-circle-one">
+                        <div class="chart-one" _echarts_instance_="ec_1623262604144" style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div style="position: relative; width: 120px; height: 100px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                                <canvas data-zr-dom-id="zr_0" width="120" height="100" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-container-bottom-info">
+                    <a>Verba Total:</a>
+                    <p id="hidden-one">R$ 197.897,52</p>
+                    <p id="hidden-ocult-one">*****************</p>
+                    <div id="eye-one" class="eye"></div>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content-container-tittle">
+                    <a>Projetos em Andamento:</a>
+                </div>
+                <div id="content-container-middle-info">
+                    <div id="container-squares-middle-info">
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                    </div>
+                    <div id="container-inProgress">
+                        <a>32</a>
+                    </div>
+                    <div id="container-dashboard-circle-two">
+                        <div class="chart-two" _echarts_instance_="ec_1623262604144" style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div style="position: relative; width: 120px; height: 100px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                                <canvas data-zr-dom-id="zr_0" width="120" height="100" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-container-bottom-info">
+                    <a>Verba Total:</a>
+                    <p id="hidden-two">R$ 78.745,57</p>
+                    <p id="hidden-ocult-two">***************</p>
+                    <div id="eye-two" class="eye"></div>
+                </div>
+            </div>
+            <div id="content-container">
+                <div id="content-container-tittle">
+                    <a>Projetos em Atraso:</a>
+                </div>
+                <div id="content-container-middle-info">
+                    <div id="container-squares-middle-info">
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                        <div class="squares-middle-info"></div>
+                    </div>
+                    <div id="container-late">
+                        <a>6</a>
+                    </div>
+                    <div id="container-dashboard-circle-three">
+                        <div class="chart-three" _echarts_instance_="ec_1623262604144" style="-webkit-tap-highlight-color: transparent; user-select: none;">
+                            <div style="position: relative; width: 120px; height: 100px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                                <canvas data-zr-dom-id="zr_0" width="120" height="100" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-container-bottom-info">
+                    <a>Verba Total:</a>
+                    <p id="hidden-three">R$ 15.576,34</p>
+                    <p id="hidden-ocult-three">***************</p>
+                    <div id="eye-three" class="eye"></div>
+                </div>
+            </div>
+        </div>
+        <div id="content-projects-graphs">
+            <div id="content-projects-graphs-tittle">
+                <a>PROJETOS TERMINADOS NOS ÚLTIMOS 7 DIAS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================================== -->
+
+    <div id="container-menu-right">
+        <div id="cont1" class="cont-icons">
+            <img id="img1" src="img/icon1.svg">
+            <div id="txt1" class="txtMR">
+                <a>VISUALIZAR</a>
+                <a>PROJETOS</a>
+            </div>
+        </div>
+        <div id="cont2" class="cont-icons">
+            <img id="img2" src="img/icon2.svg">
+            <div id="txt2" class="txtMR">
+                <a>CADASTRAR</a>
+                <a>PROJETOS</a>
+            </div>
+        </div>
+        <div id="cont3" class="cont-icons">
+            <img id="img3" src="img/icon3.svg">
+            <div id="txt3" class="txtMR">
+                <a>EDITAR</a>
+                <a>PROJETOS</a>
+            </div>
+        </div>
+        <div id="cont4" class="cont-icons">
+            <img id="img4" src="img/icon4.svg">
+            <div id="txt4" class="txtMR">
+                <a>CADASTRAR</a>
+                <a>CONSULTORES</a>
+            </div>
+        </div>
+        <div id="cont5"class="cont-icons">
+            <img id="img5" src="img/icon5.svg">
+            <div id="txt5" class="txtMR">
+                <a>ALOCAR</a>
+                <a>CONSULTORES</a>
+            </div>
+        </div>
+        <div id="cont6" class="cont-icons">
+            <img id="img6" src="img/icon6.svg">
+            <div id="txt6" class="txtMR">
+                <a>IR PARA</a>
+                <a>DASHBOARDS</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/ocultar-money.js"></script>
+
+    <!-- Script dos gráficos líquidos (precisa ser revisado) -->
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+            var s = document.getElementsByTagName('script')[0];
+        })();
+
+        var bgColor = '#D6F5FF';
+        var containers = document.getElementsByClassName('chart-one');
+        var options = [{
+            series: [{
+                type: 'liquidFill',
+                data: [0.87, 0.7, 0.45, 0.2],
+                radius: '80%',
+                outline: {
+                    show: true
+                },
+                backgroundStyle: {
+                    borderColor: 'white',
+                    borderWidth: 2,
+                    color: bgColor,
+                    shadowColor: 'rgb(0, 87, 157)',
+                },             
+                label: {
+                    position: ['50%', '50%'],
+                    fontSize: 10,
+                    color: '#00579D',
+                    insideColor: 'white',
+                }
+            }]      
+        }];
+        var charts = [];
+        for (var i = 0; i < options.length; ++i) {
+            var chart = echarts.init(containers[i]);
+
+            if (i > 0) {
+                options[i].series[0].silent = true;
+            }
+
+            chart.setOption(options[i]);
+            chart.setOption({
+                baseOption: options[i],
+                media: [{
+                    query: {
+                        maxWidth: 300
+                    },
+                    option: {
+                        series: [{
+                            label: {
+                                fontSize: 20
+                            }
+                        }]
+                    }
+                }]
+            });
+            charts.push(chart);
+        }
+        window.onresize = function () {
+            for (var i = 0; i < charts.length; ++i) {
+                charts[i].resize();
+            }
+        };
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+            var s = document.getElementsByTagName('script')[0];
+        })();
+
+        var bgColor = '#D6F5FF';
+        var containers = document.getElementsByClassName('chart-two');
+        var options = [{
+            series: [{
+                type: 'liquidFill',
+                data: [0.32, 0.25, 0.2, 0.1],
+                radius: '80%',
+                outline: {
+                    show: true
+                },
+                backgroundStyle: {
+                    borderColor: 'white',
+                    borderWidth: 2,
+                    color: bgColor,
+                    shadowColor: 'rgb(0, 87, 157)',
+                },             
+                label: {
+                    position: ['50%', '50%'],
+                    fontSize: 10,
+                    color: '#00579D',
+                    insideColor: 'white',
+                }
+            }]      
+        }];
+        var charts = [];
+        for (var i = 0; i < options.length; ++i) {
+            var chart = echarts.init(containers[i]);
+
+            if (i > 0) {
+                options[i].series[0].silent = true;
+            }
+
+            chart.setOption(options[i]);
+            chart.setOption({
+                baseOption: options[i],
+                media: [{
+                    query: {
+                        maxWidth: 300
+                    },
+                    option: {
+                        series: [{
+                            label: {
+                                fontSize: 20
+                            }
+                        }]
+                    }
+                }]
+            });
+            charts.push(chart);
+        }
+        window.onresize = function () {
+            for (var i = 0; i < charts.length; ++i) {
+                charts[i].resize();
+            }
+        };
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?4bad1df23f079e0d12bdbef5e65b072f';
+            var s = document.getElementsByTagName('script')[0];
+        })();
+
+        var bgColor = '#D6F5FF';
+        var containers = document.getElementsByClassName('chart-three');
+        var options = [{
+            series: [{
+                type: 'liquidFill',
+                data: [0.06, 0.14, 0.12, 0.1],
+                radius: '80%',
+                outline: {
+                    show: true
+                },
+                backgroundStyle: {
+                    borderColor: 'white',
+                    borderWidth: 2,
+                    color: bgColor,
+                    shadowColor: 'rgb(0, 87, 157)',
+                },             
+                label: {
+                    position: ['50%', '50%'],
+                    fontSize: 10,
+                    color: '#00579D',
+                    insideColor: 'white',
+                }
+            }]      
+        }];
+        var charts = [];
+        for (var i = 0; i < options.length; ++i) {
+            var chart = echarts.init(containers[i]);
+
+            if (i > 0) {
+                options[i].series[0].silent = true;
+            }
+
+            chart.setOption(options[i]);
+            chart.setOption({
+                baseOption: options[i],
+                media: [{
+                    query: {
+                        maxWidth: 300
+                    },
+                    option: {
+                        series: [{
+                            label: {
+                                fontSize: 20
+                            }
+                        }]
+                    }
+                }]
+            });
+            charts.push(chart);
+        }
+        window.onresize = function () {
+            for (var i = 0; i < charts.length; ++i) {
+                charts[i].resize();
+            }
+        };
+    </script>
+</body>
+</html>
