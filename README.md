@@ -11,6 +11,7 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Cadastrar
 - [ ] Configurações
 - [ ] Dropdowns
+- [ ] Pop-ups
 
 ### Desenvolvedores
 <table>
