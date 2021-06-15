@@ -12,15 +12,17 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Configurações
 - [ ] Dropdowns
 
-### Desenvolvedores:
+### Desenvolvido por
 - Cauã
 - Thiago
 - Thomas
 - Victor
 
-<h4 align="center"> 
-	🚧  Em desenvolvimento...  🚧
-</h4>
+@all-contributors please add @jakebolam for infrastructure, tests and code
+
+
+
+<h4 align="center">🚧  Em desenvolvimento...  🚧</h4>
 
 
 
