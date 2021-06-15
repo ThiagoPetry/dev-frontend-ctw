@@ -12,6 +12,12 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Configurações
 - [ ] Dropdowns
 
+Desenvolvedores:
+- Cauã
+- Thiago
+- Thomas
+- Victor
+
 <h4 align="center"> 
 	🚧  Em desenvolvimento...  🚧
 </h4>
