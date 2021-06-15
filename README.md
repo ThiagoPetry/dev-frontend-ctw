@@ -4,9 +4,9 @@ Neste repositório está somente o front-end do projeto.
 ### Recursos
 
 - [x] Login
-- [-] Home
+- [x] Home
 - [ ] Projetos
-- [-] Dashboard
+- [x] Dashboard
 - [ ] Editar
 - [ ] Cadastrar
 - [ ] Configurações
