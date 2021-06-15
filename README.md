@@ -12,7 +12,7 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Configurações
 - [ ] Dropdowns
 
-Desenvolvedores:
+### Desenvolvedores:
 - Cauã
 - Thiago
 - Thomas
