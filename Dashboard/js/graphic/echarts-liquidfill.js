@@ -85,7 +85,7 @@ external_echarts_.extendSeriesModel({
             show: true,
             color: '#294D99',
             insideColor: '#fff',
-            fontSize: 50,
+            fontSize: 70,
             fontWeight: 'bold',
 
             align: 'center',
