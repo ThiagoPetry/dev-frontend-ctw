@@ -3,7 +3,7 @@ var status = 0;
 document.getElementById("btn-open").addEventListener("click", function() {
     if(status == 0) {
         document.getElementById("btn-open").style.transform = "rotate(225deg)";
-        document.getElementById("btn-open").style.marginLeft = "16.25vw";
+        document.getElementById("btn-open").style.marginLeft = "15.5vw";
 
         document.getElementById("container-menu").style.transform = 'translateX(11vw)';
         document.getElementById("user-img").style.transform = 'translateX(-11vw)';
