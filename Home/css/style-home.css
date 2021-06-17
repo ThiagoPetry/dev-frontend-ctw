@@ -669,7 +669,7 @@ canvas {
 
 #content-projects-graphs-tittle {
     width: 100%;
-    height: 5vh;
+    height: 16vh;
     background-color: #00579D;
     border-radius: 0.75vh 0.75vh 0 0;
     display: flex;
@@ -686,9 +686,7 @@ canvas {
 #graphSupply {
     width: 46vw;
     height: 28vh;
-    margin: 2vh 5% 0 10%;
-    background-color: rgb(226, 226, 226);
-    border: 0.2vh solid rgb(167, 167, 167);
+    margin: 2vh 5% 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -697,16 +695,40 @@ canvas {
 #graphSupply .graph-cont {
     width: 5vw;
     height: 28vh;
-    background-color: rgb(255, 6, 6);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#graphSupply .graph-cont .graph-cont-num {
+    width: 5vw;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: #00579D;
+    font-size: 3vh;
+}
+
+#graphSupply .graph-cont .graph-cont-num::after {
+    content: "";
+    width: 42vw;
+    height: 0.1vh;
+    margin-left: 45vw;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    position: absolute;
+    z-index: 1;
 }
 
 #graphSupply .graph-bars {
     width: 41vw;
-    height: 28vh;
-    background-color: rgb(6, 255, 19);
+    height: 23vh;
+    background-color: rgb(226, 226, 226);
+    border: 0.1vh solid rgb(167, 167, 167);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -714,16 +736,20 @@ canvas {
 
 #bar1 {
     height: 23vh;
-    margin-top: 5vh;
+    margin-top: 0vh;
     margin-left: 1vw;
 }
 
-#bar2 {height: 20vh; margin-top: 8vh;}
-#bar3 {height: 5vh; margin-top: 23vh;}
-#bar4 {height: 15vh; margin-top: 13vh;}
-#bar5 {height: 10vh; margin-top: 18vh;}
-#bar6 {height: 25vh; margin-top: 3vh;}
-#bar7 {height: 20vh; margin-top: 8vh;}
+#graphSupply .graph-bars .bar:hover {
+    background-color: #004b88;
+}
+
+#bar2 {height: 18.5vh; margin-top: 4.5vh;}
+#bar3 {height: 4.5vh; margin-top: 18.5vh;}
+#bar4 {height: 9vh; margin-top: 14vh;}
+#bar5 {height: 18.5vh; margin-top: 4.5vh;}
+#bar6 {height: 23vh; margin-top: 0vh;}
+#bar7 {height: 18.5vh; margin-top: 4.5vh;}
 
 #graphSupply .graph-bars .bar {
     width: 4vw;
@@ -731,4 +757,56 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#graphData {
+    width: 39vw;
+    height: 28vh;
+    margin: -3vh 0 0 11.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#graphData .data {
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #00579D;
+    display: flex;
+    justify-content: center;
+}
+
+#graphData .data::after {
+    content: "";
+    width: 0.1vw;
+    height: 3vh;
+    margin-top: -4vh;
+    background-color: rgb(167, 167, 167);;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+
+#graph-box {
+    width: 15vw;
+    height: 15vh;
+    margin: 13.5vh 0 0 23.2vw;
+    background-color: white;
+    box-shadow: 0.25vh 0.25vh rgb(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 20;
+    display: none;
+}
+
+#graph-box .graph-box-title {
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: center;
 }
