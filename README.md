@@ -10,8 +10,14 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Consultores
 - [ ] Editar
 - [ ] Cadastrar
+- [x] Gráficos líquidos
+- [x] Gráfico de barra
+- [ ] Gráfico de linha
 - [ ] Configurações
+- [ ] Perfil
 - [ ] Dropdowns
+- [ ] Filtros projetos
+- [ ] Filtros dashboard
 - [ ] Pop-ups
 
 ### Desenvolvedores
