@@ -47,6 +47,8 @@ document.getElementById("btn-open").addEventListener("click", function() {
         document.getElementById("container-msg").style.display = "none";
 
         document.getElementById("btn-open").style.transform = "rotate(45deg)";
+        document.getElementById("btn-open").style.marginLeft = "15.6vw";
+        document.getElementById("btn-open").style.backgroundColor = "white";
 
         status--; 
     }
