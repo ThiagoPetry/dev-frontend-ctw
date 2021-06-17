@@ -645,6 +645,7 @@ canvas {
     height: 1.8vh;
     margin-top: -0.1vh;
     margin-left: 0.25vw;
+    box-shadow: none;
     cursor: pointer;
     background-image: url("../img/eye.svg");
     background-size: cover;
