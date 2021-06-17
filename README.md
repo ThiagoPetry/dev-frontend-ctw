@@ -7,6 +7,7 @@ Neste repositório está somente o front-end do projeto.
 - [x] Home
 - [ ] Projetos
 - [x] Dashboard
+- [ ] Consultores
 - [ ] Editar
 - [ ] Cadastrar
 - [ ] Configurações
