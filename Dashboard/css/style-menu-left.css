@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-    width: 4.25vw;
+    width: 4vw;
     height: 6vh;
     margin: 1vh 0 0 1vw;
     background-image: url("../img/weg-logo-2.png");
@@ -42,7 +42,7 @@ body {
 }
 
 .page-indicator a {
-    font-size: 2vh;
+    font-size: 2.4vh;
     font-weight: bold;
     color: #00579D;
     position: absolute;
@@ -88,7 +88,7 @@ body {
 
 .vectorLanguage {
     width: 1.5vw;
-    height: 2vh;
+    height: 1.8vh;
     margin-left: 0.25vw;
     background-image: url("../img/arrow.svg");
     background-size: cover;
