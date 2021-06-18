@@ -156,6 +156,7 @@ input:focus + label, .searchformfld input:not(:placeholder-shown) + label {
 
 #container .container-login .container-bottom .container-input .user input:focus {
     border-bottom: 0.4vh solid #00579D;
+    transition: border 0.5s;
 }
 
 input:valid + label {
