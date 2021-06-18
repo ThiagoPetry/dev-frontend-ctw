@@ -154,6 +154,10 @@ input:focus + label, .searchformfld input:not(:placeholder-shown) + label {
     transform: scale(0.9) translateY(-100%) translateX(-3vh); 
 }
 
+#container .container-login .container-bottom .container-input .user input:focus {
+    border-bottom: 0.4vh solid #00579D;
+}
+
 input:valid + label {
     transform: scale(0.9) translateY(-100%) translateX(-3vh); 
 }
