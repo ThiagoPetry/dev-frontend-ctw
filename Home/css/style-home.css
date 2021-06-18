@@ -709,8 +709,8 @@ canvas {
     align-items: center;
     flex-direction: column;
     font-weight: bold;
-    color: #00579D;
-    font-size: 3vh;
+    color: #555555;
+    font-size: 2.8vh;
 }
 
 #graphSupply .graph-cont .graph-cont-num::after {
@@ -775,7 +775,7 @@ canvas {
 #graphData .data {
     font-size: 2.5vh;
     font-weight: bold;
-    color: #00579D;
+    color: #555555;
     display: flex;
     justify-content: center;
 }
