@@ -192,11 +192,12 @@ canvas {
     font-size: 3.4vh;
 }
 
-#container-money-info .money-choose .money-choose-text::after {
+#container-money-info .money-choose .money-choose-icon::before {
     content: "";
     width: 0.125vw;
     height: 5vh;
-    margin-left: 3.5vw;
+    margin-top: -1vh;
+    margin-left: -1.5vw;
     position: absolute;
     background-color: #b3b3b3;
 }
