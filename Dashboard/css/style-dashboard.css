@@ -192,12 +192,12 @@ canvas {
     font-size: 3.4vh;
 }
 
-#container-money-info .money-choose .money-choose-icon::before {
+#container-money-info .money-choose .money-choose-title::before {
     content: "";
     width: 0.125vw;
     height: 5vh;
-    margin-top: -1vh;
-    margin-left: -1.5vw;
+    margin-top: 12vh;
+    margin-left: 0vw;
     position: absolute;
     background-color: #b3b3b3;
 }
@@ -209,9 +209,17 @@ canvas {
     background-position: center;
     background-size: cover;
     margin-top: 5vh;
-    margin-left: 6.5vw;
     position: absolute;
     cursor: pointer;
+}
+
+#choose {
+    margin-left: 6.5vw;
+    transition: all 0.2s;
+}
+
+#coin {
+    transition: all 0.2s;
 }
 
 #container-money-info .money-box {
